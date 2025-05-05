@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: rgb(149, 48, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(179, 102, 238);
+    /* text-align: center; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid rgb(179, 102, 238);
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(225, 215, 245);
+    color: rgb(50, 50, 50);
+    
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: rgb(120, 30, 200);
+    /* Focus state */
+    box-shadow: 0px 0px 5px rgba(120, 30, 200, 0.5);
+}
+
+.input-container button {
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(120, 30, 200);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: rgb(100, 20, 170);
+    /* Slightly darker on hover */
+}
+
+ul{
+    list-style: none;
+    /* padding: 0; */
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(225, 215, 245);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 10px;
+}
+
+li button{
+    background-color: rgb(255, 99, 132);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+   color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+li button:hover{
+    background-color: rgb(230, 79, 112)
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
